@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3> Selim Tezel's Randomized Automatic Op Art Circles: Postmodern interpretations of Vasarely</h3>
+<!--Create a button to generate new Op Art-->
+<button type="button" id="generateNewOpartButton" onclick="generateNewOpArt()">Generate New Op Art</button>
+
+<!--Report complexity of the image as indicated by the number of overlapping circles-->
+Complexity:&nbsp <span id="complexity"></span> &nbsp circles
+
+<!--Create buttons to increase/decrease the complexity of the Op Art in increments of 10 overlapping circles-->
+<button type="button" id="increaseComplexityButton" onclick="increaseComplexity()">Increase Complexity</button>
+<button type="button" id="decreaseComplexityButton" onclick="decreaseComplexity()">Decrease Complexity</button>
+
+<!-- the canvas where the Op Art will be displayed-->
+<canvas id="myCanvas" width="1200" height="600" style="border:10px solid black">
+<!--Warn against possible non-support of the canvas element in earlier versions of the browsers-->
+Your browser does not support the canvas element.
+</canvas>
+<!--Invoke the javascript to do the magic-->
+<script type="text/javascript" src="js/RandomizedAutomaticVasarelyOpArtCircles.js"></script>
+</body>
+</html>
+
